@@ -1,13 +1,13 @@
-/* blackclovercss1.css */
-
-
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0;l
     padding: 0;
     text-align: center;
     background-color: #f8f8f8;
-    
+    background-image: url('CLOVERROYAUME.jpg');
+    /* mise en forme de l'image */
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -31,13 +31,13 @@ h1 {
 
 
 .description {
-        background-color: rgba(255, 255, 255, 0.425);
-        max-width: 80%;
-        padding: 15px;
-        border-radius: 15px;
-        margin: 20px auto;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+    background-color: rgba(255, 255, 255, 0.425);
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 
 img {
@@ -53,7 +53,7 @@ img:hover {
     transform: scale(1.2);
 }
 
-/* noms personnages */
+
 .character h2 {
     color: #333;
     font-size: 24px;
@@ -61,17 +61,17 @@ img:hover {
 }
 
 .character img {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .character {
-    border: 1px solid black; 
-    padding: 1em; 
-    margin-bottom: 1em; 
+    border: 1px solid black;
+    padding: 1em;
+    margin-bottom: 1em;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.425);
     max-width: 80%;
@@ -79,44 +79,136 @@ img:hover {
     border-radius: 15px;
     margin: 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
-    
 }
 
-.bubulle {
+.bande-role {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
 
-    background-color: rgba(255, 255, 255, 0.7);
+.bande-role img {
+    height: 100%;
+    display: inline-block;
+    margin-right: 20px;
+    animation: defilement 10s linear infinite;
+}
+
+@keyframes defilement {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    background-image: url('CLOVERROYAUME.jpg');
+    /*mise en forme de l'image */
+    background-size: cover; /* Ajuste la taille */
+    background-position: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.425);
     max-width: 80%;
     padding: 15px;
     border-radius: 15px;
     margin: 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
 }
 
-body {
-    background-image: url('CLOVERROYAUME.jpg');
-    /* Propriétés de mise en forme de l'image */
-    background-size: cover; /* Ajuste la taille de l'image pour remplir toute la page */
-    background-position: center;
-    margin: 0; /* Pour enlever les marges par défaut du corps */
-    padding: 0; /* Pour enlever le rembourrage par défaut du corps */
+.description {
+    background-color: rgba(255, 255, 255, 0.425);
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.traduction {
-    position: relative;
-    width:20px; /* Ajuster selon la largeur souhaitée */
-    height: 20px; /* Ajuster selon la hauteur souhaitée */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.traductionimg {
-    position: absolute;
+/* zoom  */
+img:hover {
+    transform: scale(1.2);
+}
+
+.character h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.character img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.character {
+    border: 1px solid black;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.425);
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bande-role {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
     top: 0;
-    right: 0;
-    width: 20px; /* Ajuster selon la largeur souhaitée */
-    height: 20px; /* Ajuster selon la hauteur souhaitée */
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
 }
 
+.bande-role img {
+    height: 100%;
+    display: inline-block;
+    margin-right: 20px;
+    animation: defilement 10s linear infinite;
+}
 
-
-
+@keyframes defilement {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

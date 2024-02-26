@@ -9,11 +9,7 @@
 </head>
 
 <body>
-        <div class="traduction">
-            <img src="anglais.bmp" alt="Image 1">
-            <img src="anglais.bmp" alt="Image 2">
-        </div>
-
+    <div class="bande-role"></div>
     <div class="container">
         <h1>BLACK CLOVER</h1>
         <article>
@@ -42,52 +38,57 @@
             <img src="qizipq8v.bmp" alt="Image Noelle">
         </div>
     </div>
-    <header>
-        <h1>Black Clover - Opening</h1>
-    </header>
     <section>
+        <header>
+            <h1>Black Clover - Opening</h1>
+        </header>
         <figure>
             <video controls>
                 <source src="Black Clover - Opening 1 (HD).mp4" type="video/mp4" />
             </video>
         </figure>
     </section>
-    <form method="post" action="#">
-        <div class="form-elt">
-            <label for="pseudo">Pseudo :</label>
-            <input type="text" id="pseudo" />
-        </div>
-        <div class="form-elt">
-            <label for="avatar">Avatar :</label>
-            <input type="text" id="avatar" />
-        </div>
-        <div class="form-elt">
-            <label for="genre">Je suis :</label>
-            <select name="signe" id="signe">
-                <option value="(pas d'infos)">Non précisé</option>
-                <option value="Bélier">Bélier</option>
-                <option value="Taureau">Taureau</option>
-                <option value="Gémeaux">Gémeaux</option>
-                <option value="Cancer ">Cancer</option>
-                <option value="Lion">Lion</option>
-                <option value="Vierge">Vierge</option>
-                <option value="Balance">Balance</option>
-                <option value="Scorpion">Scorpion</option>
-                <option value="Sagittaire">Sagittaire</option>
-                <option value="Capricorne">Capricorne</option>
-                <option value="Verseau">Verseau</option>
-                <option value="Poissons">Poissons</option>
-            </select>
-        </div>
-        <div class="form-elt">
-            <label for="presentation">Présentation :</label>
-            <textarea id="presentation"></textarea>
-        </div>
-        <div class="btn">
-            <button type="reset">Annuler</button>
-            <button type="button">Générer le code</button>
-        </div>
-    </form>
+    
+    
+    <div class="bande-role">
+        <script>
+            window.onload = function () {
+                var bandeRole = document.querySelector('.bande-role');
+                var image = document.createElement('img');
+                image.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnh8bfVYqsgH4jkZqe8VhieiV7sB4Q9NR7ww&usqp=CAU';
+                image.alt = 'Image défilante';
+                bandeRole.appendChild(image);
+                var speed = 50;
+                var distance = 1;
+                function animate() {
+                    bandeRole.scrollLeft += distance;
+                    if (bandeRole.scrollLeft >= bandeRole.scrollWidth - bandeRole.clientWidth) {
+                        bandeRole.scrollLeft = 0;
+                    }
+                }
+                var animation = setInterval(animate, speed);
+                bandeRole.onmouseover = function () {
+                    clearInterval(animation);
+                };
+                bandeRole.onmouseout = function () {
+                    animation = setInterval(animate, speed);
+                };
+            };
+        </script>
+    </head>
+    
+    <div class="bande-role">
+        <script>
+            window.onload = function () {
+                var bandeRole = document.querySelector('.bande-role');
+                var image = bandeRole.querySelector('img');
+                image.style.width = bandeRole.offsetWidth + 'px';
+                image.style.transform = 'translateX(100%)';
+            };
+        </script>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnh8bfVYqsgH4jkZqe8VhieiV7sB4Q9NR7ww&usqp=CAU" alt="Image défilante">
+    </div>
+
 </body>
 
 </html>

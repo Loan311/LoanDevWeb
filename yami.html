@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'identification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Identifiez-vous</h1>
+        <form method="post" action="#">
+            <div class="form-elt">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-elt">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-elt">
+                <label for="signe">Compagnie de Chevaliers-Mages :</label>
+                <select name="signe" id="signe">
+                    <option value="(pas d'infos)">Non précisé</option>
+                    <option value="Bélier">Taureau Noir</option>
+                    <option value="Taureau">Cerf Cendré</option>
+                    <option value="Gémeaux">Orque Magenta</option>
+                    <option value="Cancer">Lion Flamboyant</option>
+                    <option value="Lion">Paon de Corail</option>
+                    <option value="Vierge">Cerf Turquoise</option>
+                    <option value="Balance">Aube d'Or</option>
+                    <option value="Scorpion">Cerf Cendré</option>
+                </select>
+            </div>
+            <div class="btn">
+                <a href="connexionYami.html"><button type="button">Se connecter</button></a>
+            </div>            
+        </form>
+    </div>
+</body>
+
+</html>
